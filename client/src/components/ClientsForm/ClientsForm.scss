@@ -1,0 +1,42 @@
+.clientsForm {
+    &__header {
+
+    }
+
+    &__form {
+        margin-bottom: 1rem;
+
+        &-btn:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__label {
+        // transform: translateY(1.5rem);
+        // cursor: text;
+    }
+
+    &__form-group:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &__input {
+        position: relative;
+        background-color: #9999990a;
+        padding: 0.2rem;
+        
+        border-bottom: .3rem solid transparent;
+
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(#000, .1);
+            border-bottom: .3rem solid #55c57a;
+            
+            &.invalid {
+                border-bottom: .3rem solid #ff7730;
+            }
+        }
+    }
+}
